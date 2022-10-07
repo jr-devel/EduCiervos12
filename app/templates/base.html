@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cecyt12, elegir carrera, carrera, informatica, administracion, contabilidad, marketing digital, test vocacional">
+    <meta name="authors" content="Martha Judith Giron Hernández, Raffealla Melina Macías Montoy, Juan Diego Rico Espluga">
+    <!-- <meta name="description" content=""> -->
+    <meta name="description" content="Es una aplicación web para tutoría y orientación de jóvenes estudiantes del Centro de Estudios Científicos y Tecnológicos n° 12 para facilitar la elección y dar a conocer todas las carreras técnicas que se ofrecen en el plantel del Instituto Politécnico Nacional.">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#800040">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#800040">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#800040">
+    <title>EduCiervos 12 | {% block title %}{% endblock %}</title>
+    <!-- ICONS -->
+    <meta name="apple-mobile-web-app-title" content="EduCiervos12">
+    <meta name="application-name" content="EduCiervos12">
+    <meta name="msapplication-TileColor" content="#800040">
+    <meta name="theme-color" content="#800040">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Libre+Barcode+128+Text&family=Lobster&family=Metal+Mania&family=Open+Sans&family=PT+Sans:wght@400;700&family=Press+Start+2P&family=Roboto:wght@100;900&family=Shadows+Into+Light&family=Solway&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/897a6024ea.js" crossorigin="anonymous"></script>
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="{{ url_for('static',filename='img/ico/Ciervos.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <div class="navbar">{% include 'navbar.html' %}</div>
+    <div class="content">{% block content %}{% endblock %}</div>
+    <div class="footer">{% include 'footer.html' %}</div>
+    <!-- Scripts -->
+    <script src="/static/js/modernizr.js"></script>
+    <script src="/static/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
